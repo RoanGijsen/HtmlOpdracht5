@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+</head>
+
+
+<body>
+
+
+<!-- de 4 knoppen-->
+<button id="A" onclick="addA()">A</button>
+<button id="B" onclick="addB()">B</button>
+<button id="C" onclick="addC()">C</button>
+<button id="D" onclick="addD()">D</button>
+
+<!-- de div -->
+<div id="myDiv">
+    Klik op een knop
+  </div>
+</body>
+</html>
+
+<script>
+
+// 4 variabelen om de kliks te tellen
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+
+// functie doet + 1 bij a elke als er op A wordt geklikt en geeft een alert als dat meer dan 1 is
+// Zorgt ook voor de extra regel in de div
+function addA()
+{
+    a ++;
+    if (a > 1)
+    {
+        alert("Er is al " + a + " keer op A geklikt");
+    }
+     var x = document.getElementById("myDiv");
+  x.innerHTML = (x.innerHTML + "<br>" + "Er is op A geklikt");
+   
+}
+
+function addB()
+{
+    b++;
+    if (b > 1)
+    {
+        alert("Er is al " + b + " keer op B geklikt");
+    }
+    var x = document.getElementById("myDiv");  
+    x.innerHTML = (x.innerHTML + "<br>" + "Er is op B geklikt"); 
+}
+function addC()
+{
+    c++;
+    if (c > 1)
+    {
+        alert("Er is al " + c + " keer op C geklikt");
+    }
+    var x = document.getElementById("myDiv"); 
+    x.innerHTML = (x.innerHTML + "<br>" + "Er is op C geklikt");
+}
+function addD()
+{
+    d++;
+    if (d > 1)
+    {
+        alert("Er is al " + d + " keer op D geklikt");
+    }
+    var x = document.getElementById("myDiv");  
+    x.innerHTML = (x.innerHTML + "<br>" + "Er is op D geklikt");
+}
+
+</script>
